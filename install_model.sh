@@ -10,19 +10,19 @@ wget -O models/Lora/bj.safetensors https://liblibai-online.liblib.ai/web/model/9
 wget -O models/Lora/yf.safetensors https://liblibai-online.liblib.ai/web/model/13f67ca924aeb9ab8d93739d84db0f8205a8cfb83ee05af74f3f169cb47f2e38.safetensors?attname=LEOSAM%27s%20Clothing%20%2B%2F-%20Adjuster%20%E6%9C%8D%E8%A3%85%E5%A2%9E%E5%87%8F%20LoRA_3.0.safetensors
 wget -O models/Lora/sc.safetensors https://liblibai-online.liblib.ai/web/model/7608c25d373afee584e37af602cb324c9190699fb51533abadf19658a88cea37.safetensors?attname=%E3%80%90%E9%BA%BB%E7%93%9Clora%E3%80%91%E8%BA%AB%E6%9D%90%E8%B0%83%E8%8A%82%E5%99%A8S-shape%20body(1.5-2.5)_v1.0.safetensors
 
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny_fp16.safetensors -d extensions/sd-webui-controlnet/models -o control_v11p_sd15_canny_fp16.safetensors
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_normalbae_fp16.safetensors -d extensions/sd-webui-controlnet/models -o control_v11p_sd15_normalbae_fp16.safetensors
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose_fp16.safetensors -d extensions/sd-webui-controlnet/models -o control_v11p_sd15_openpose_fp16.safetensors
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile_fp16.safetensors -d extensions/sd-webui-controlnet/models -o control_v11f1e_sd15_tile_fp16.safetensors
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11e_sd15_shuffle_fp16.yaml -d extensions/sd-webui-controlnet/models -o control_v11e_sd15_shuffle_fp16.yaml
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_canny_fp16.yaml -d extensions/sd-webui-controlnet/models -o control_v11p_sd15_canny_fp16.yaml
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11f1p_sd15_depth_fp16.yaml -d extensions/sd-webui-controlnet/models -o control_v11f1p_sd15_depth_fp16.yaml
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_inpaint_fp16.yaml -d extensions/sd-webui-controlnet/models -o control_v11p_sd15_inpaint_fp16.yaml
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_lineart_fp16.yaml -d extensions/sd-webui-controlnet/models -o control_v11p_sd15_lineart_fp16.yaml
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_mlsd_fp16.yaml -d  extensions/sd-webui-controlnet/models -o control_v11p_sd15_mlsd_fp16.yaml
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_normalbae_fp16.yaml -d extensions/sd-webui-controlnet/models -o control_v11p_sd15_normalbae_fp16.yaml
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_openpose_fp16.yaml -d extensions/sd-webui-controlnet/models -o control_v11p_sd15_openpose_fp16.yaml
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_scribble_fp16.yaml -d extensions/sd-webui-controlnet/models -o control_v11p_sd15_scribble_fp16.yaml
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_seg_fp16.yaml -d  extensions/sd-webui-controlnet/models -o control_v11p_sd15_seg_fp16.yaml
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_softedge_fp16.yaml -d extensions/sd-webui-controlnet/models -o control_v11p_sd15_softedge_fp16.yaml
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15s2_lineart_anime_fp16.yaml -d extensions/sd-webui-controlnet/models -o control_v11p_sd15s2_lineart_anime_fp16.yaml
+wget https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny_fp16.safetensors -O extensions/sd-webui-controlnet/models/control_v11p_sd15_canny_fp16.safetensors
+wget  https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_normalbae_fp16.safetensors -O extensions/sd-webui-controlnet/models/control_v11p_sd15_normalbae_fp16.safetensors
+wget https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose_fp16.safetensors -O extensions/sd-webui-controlnet/models/control_v11p_sd15_openpose_fp16.safetensors
+wget  https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile_fp16.safetensors -O extensions/sd-webui-controlnet/models/control_v11f1e_sd15_tile_fp16.safetensors
+wget  https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11e_sd15_shuffle_fp16.yaml -O extensions/sd-webui-controlnet/models/control_v11e_sd15_shuffle_fp16.yaml
+wget https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_canny_fp16.yaml -O extensions/sd-webui-controlnet/models/control_v11p_sd15_canny_fp16.yaml
+wget https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11f1p_sd15_depth_fp16.yaml -O extensions/sd-webui-controlnet/models/control_v11f1p_sd15_depth_fp16.yaml
+wget https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_inpaint_fp16.yaml -O extensions/sd-webui-controlnet/models/control_v11p_sd15_inpaint_fp16.yaml
+wget https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_lineart_fp16.yaml -O extensions/sd-webui-controlnet/models/control_v11p_sd15_lineart_fp16.yaml
+wget https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_mlsd_fp16.yaml -O  extensions/sd-webui-controlnet/models/control_v11p_sd15_mlsd_fp16.yaml
+wget  https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_normalbae_fp16.yaml -O extensions/sd-webui-controlnet/models/control_v11p_sd15_normalbae_fp16.yaml
+wget https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_openpose_fp16.yaml -O extensions/sd-webui-controlnet/models/control_v11p_sd15_openpose_fp16.yaml
+wget  https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_scribble_fp16.yaml -O extensions/sd-webui-controlnet/models/control_v11p_sd15_scribble_fp16.yaml
+wget  https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_seg_fp16.yaml -O  extensions/sd-webui-controlnet/models/control_v11p_sd15_seg_fp16.yaml
+wget https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15_softedge_fp16.yaml -O extensions/sd-webui-controlnet/models/control_v11p_sd15_softedge_fp16.yaml
+wget https://huggingface.co/ckpt/ControlNet-v1-1/raw/main/control_v11p_sd15s2_lineart_anime_fp16.yaml -O extensions/sd-webui-controlnet/models/control_v11p_sd15s2_lineart_anime_fp16.yaml
