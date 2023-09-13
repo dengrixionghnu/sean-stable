@@ -186,8 +186,9 @@ class InterrogateModels:
         res = ""
         shared.state.begin(job="interrogate")
         try:
-            lowvram.send_everything_to_cpu()
-            devices.torch_gc()
+            if shared.cmd_opts.lowvram or shared.cmd_opts.medvram:
+                lowvram.send_everything_to_cpu()
+                devices.torch_gc()
 
             self.load()
 

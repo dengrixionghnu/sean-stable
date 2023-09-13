@@ -70,7 +70,6 @@ class LoraUserMetadataEditor(ui_extra_networks_user_metadata.UserMetadataEditor)
         metadata = item.get("metadata") or {}
 
         keys = {
-            'ss_output_name': "Output name:",
             'ss_sd_model_name': "Model:",
             'ss_clip_skip': "Clip skip:",
             'ss_network_module': "Kohya module:",
@@ -168,7 +167,7 @@ class LoraUserMetadataEditor(ui_extra_networks_user_metadata.UserMetadataEditor)
                 random_prompt = gr.Textbox(label='Random prompt', lines=4, max_lines=4, interactive=False)
 
             with gr.Column(scale=1, min_width=120):
-                generate_random_prompt = gr.Button('Generate', size="lg", scale=1)
+                generate_random_prompt = gr.Button('Generate').style(full_width=True, size="lg")
 
         self.edit_notes = gr.TextArea(label='Notes', lines=4)
 

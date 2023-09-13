@@ -133,7 +133,7 @@ class NetworkModule:
 
         return 1.0
 
-    def finalize_updown(self, updown, orig_weight, output_shape, ex_bias=None):
+    def finalize_updown(self, updown, orig_weight, output_shape):
         if self.bias is not None:
             updown = updown.reshape(self.bias.shape)
             updown += self.bias.to(orig_weight.device, dtype=orig_weight.dtype)
@@ -145,10 +145,7 @@ class NetworkModule:
         if orig_weight.size().numel() == updown.size().numel():
             updown = updown.reshape(orig_weight.shape)
 
-        if ex_bias is not None:
-            ex_bias = ex_bias * self.multiplier()
-
-        return updown * self.calc_scale() * self.multiplier(), ex_bias
+        return updown * self.calc_scale() * self.multiplier()
 
     def calc_updown(self, target):
         raise NotImplementedError()
