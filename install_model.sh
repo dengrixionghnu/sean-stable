@@ -3,7 +3,7 @@
 git clone https://github.com/toriato/stable-diffusion-webui-wd14-tagger.git extensions/stable-diffusion-webui-wd14-tagger
 git clone -b main https://github.com/Mikubill/sd-webui-controlnet.git  extensions/sd-webui-controlnet
 cd  extensions/sd-webui-controlnet
-git checkout fb000270
+git checkout 36b3cfb0
 cd ../../
 git clone https://github.com/dengrixionghnu/TemporalKit.git extensions/TemporalKit
 git clone https://github.com/Bing-su/adetailer.git extensions/adetailer
