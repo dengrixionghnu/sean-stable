@@ -3,6 +3,7 @@
 git clone https://github.com/toriato/stable-diffusion-webui-wd14-tagger.git extensions/stable-diffusion-webui-wd14-tagger
 git clone https://github.com/Mikubill/sd-webui-controlnet.git  extensions/sd-webui-controlnet
 git clone https://github.com/dengrixionghnu/TemporalKit.git extensions/TemporalKit
+git clone https://github.com/Bing-su/adetailer.git extensions/adetailer
 
 wget -O models/Stable-diffusion/ymzr.safetensors "https://liblibai-online.liblib.ai/web/model/ea8e801c3a7607a4a65287ce701598a4ab860574a0b751463ccd66e897146033.safetensors?attname=%E5%A2%A8%E5%B9%BD%E4%BA%BA%E9%80%A0%E4%BA%BA_v1040%E7%B2%BE%E7%AE%80.safetensors"
 
