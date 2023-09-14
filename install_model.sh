@@ -15,6 +15,7 @@ wget -O models/Lora/bj.safetensors "https://liblibai-online.liblib.ai/web/model/
 wget -O models/Lora/yf.safetensors "https://liblibai-online.liblib.ai/web/model/13f67ca924aeb9ab8d93739d84db0f8205a8cfb83ee05af74f3f169cb47f2e38.safetensors?attname=LEOSAM%27s%20Clothing%20%2B%2F-%20Adjuster%20%E6%9C%8D%E8%A3%85%E5%A2%9E%E5%87%8F%20LoRA_3.0.safetensors"
 
 wget -O models/Lora/sc.safetensors "https://liblibai-online.liblib.ai/web/model/7608c25d373afee584e37af602cb324c9190699fb51533abadf19658a88cea37.safetensors?attname=%E3%80%90%E9%BA%BB%E7%93%9Clora%E3%80%91%E8%BA%AB%E6%9D%90%E8%B0%83%E8%8A%82%E5%99%A8S-shape%20body(1.5-2.5)_v1.0.safetensors"
+wget -O models/Lora/gy.safetensors "https://liblibai-online.vibrou.com/web/model/6e205fc0c7fb85876d6aab8129c37b80149340e2cd8dcdb74101cd1e726e770d.safetensors?attname=%E5%85%89%E6%B3%BD%E8%B0%83%E8%8A%82%E5%99%A8%2FGloss_Tweaker%2F%E5%85%89%E6%B2%A2%E8%AA%BF%E6%95%B4%E5%99%A8_v2.0.safetensors"
 
 wget https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny_fp16.safetensors -O extensions/sd-webui-controlnet/models/control_v11p_sd15_canny_fp16.safetensors
 wget  https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_normalbae_fp16.safetensors -O extensions/sd-webui-controlnet/models/control_v11p_sd15_normalbae_fp16.safetensors
