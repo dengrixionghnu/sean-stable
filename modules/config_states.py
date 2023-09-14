@@ -8,12 +8,14 @@ import time
 import tqdm
 
 from datetime import datetime
+from collections import OrderedDict
 import git
 
 from modules import shared, extensions, errors
 from modules.paths_internal import script_path, config_states_dir
 
-all_config_states = {}
+
+all_config_states = OrderedDict()
 
 
 def list_config_states():
@@ -26,14 +28,10 @@ def list_config_states():
     for filename in os.listdir(config_states_dir):
         if filename.endswith(".json"):
             path = os.path.join(config_states_dir, filename)
-            try:
-                with open(path, "r", encoding="utf-8") as f:
-                    j = json.load(f)
-                    assert "created_at" in j, '"created_at" does not exist'
-                    j["filepath"] = path
-                    config_states.append(j)
-            except Exception as e:
-                print(f'[ERROR]: Config states {path}, {e}')
+            with open(path, "r", encoding="utf-8") as f:
+                j = json.load(f)
+                j["filepath"] = path
+                config_states.append(j)
 
     config_states = sorted(config_states, key=lambda cs: cs["created_at"], reverse=True)
 
