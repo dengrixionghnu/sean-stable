@@ -8,7 +8,7 @@ cd ../../
 git clone https://github.com/dengrixionghnu/TemporalKit.git extensions/TemporalKit
 git clone https://github.com/Bing-su/adetailer.git extensions/adetailer
 
-wget -O models/Stable-diffusion/ymzr.safetensors "https://liblibai-online.liblib.ai/web/model/ea8e801c3a7607a4a65287ce701598a4ab860574a0b751463ccd66e897146033.safetensors?attname=%E5%A2%A8%E5%B9%BD%E4%BA%BA%E9%80%A0%E4%BA%BA_v1040%E7%B2%BE%E7%AE%80.safetensors"
+wget -O models/Stable-diffusion/ymzr.safetensors "https://liblibai-online.vibrou.com/web/model/ea8e801c3a7607a4a65287ce701598a4ab860574a0b751463ccd66e897146033.safetensors?attname=%E5%A2%A8%E5%B9%BD%E4%BA%BA%E9%80%A0%E4%BA%BA_v1040%E7%B2%BE%E7%AE%80.safetensors"
 
 wget -O models/Lora/bj.safetensors "https://liblibai-online.liblib.ai/web/model/910e5d54e9c3a34d2de238c5c670654713eacffb982991340156d24a70786b15.safetensors?attname=%E8%83%8C%E6%99%AF%E7%BB%86%E8%8A%82%E5%A2%9E%E5%BC%BA%2F%E7%AE%80%E5%8C%96%20%20Background%20Detail%20Enhanced%2FSi_v3.0.safetensors"
 
