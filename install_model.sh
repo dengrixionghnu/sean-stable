@@ -1,6 +1,4 @@
 #!/bin/bash
-git clone https://github.com/dengrixionghnu/stable-diffusion-webui.git sean-ui
-cd sean-ui
 git clone https://github.com/toriato/stable-diffusion-webui-wd14-tagger.git extensions/stable-diffusion-webui-wd14-tagger
 git clone -b main https://github.com/Mikubill/sd-webui-controlnet.git  extensions/sd-webui-controlnet
 cd  extensions/sd-webui-controlnet
