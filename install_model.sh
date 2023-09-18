@@ -1,5 +1,5 @@
 #!/bin/bash
-git clone -b v1.60-RC https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+git clone -b v1.6.0-RC https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 cd stable-diffusion-webui
 git clone https://github.com/toriato/stable-diffusion-webui-wd14-tagger.git extensions/stable-diffusion-webui-wd14-tagger
 git clone -b main https://github.com/Mikubill/sd-webui-controlnet.git  extensions/sd-webui-controlnet
